@@ -1,5 +1,6 @@
 node_modules
 .DS_Store
+# rename dist folder to docs to deploy to github pages
 dist
 dist-ssr
 *.local

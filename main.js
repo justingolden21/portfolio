@@ -56,7 +56,7 @@ for(let i=0; i<200; i++) addStar();
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load(Math.random() > 0.5 ? 'space.jpg' : 'sky.jpg');
+const spaceTexture = new THREE.TextureLoader().load(Math.random() > 0.9 ? 'space.jpg' : 'sky.jpg');
 scene.background = spaceTexture;
 
 // Avatar
