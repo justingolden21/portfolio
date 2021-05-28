@@ -1,26 +1,28 @@
-@import url("https://use.typekit.net/jmk3xov.css");
-
 canvas {
   position: fixed;
   top: 0;
   left: 0;
 }
 
+::-moz-selection {
+  background: #999;
+}
+::selection {
+  background: #999;
+}
 
 :root {
-  --dark-bg: rgba(15, 15, 15, 0.95);
-  --spacing: 350px;
+  --dark-bg: #111e;
+  --spacing: 360px;
 
-  font-family: brandon-grotesque, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-
 main {
   width: 100vw;
   color: white;
-  z-index: 99;
   position: absolute;
   width: 100%;
   margin: 0px auto;
@@ -30,52 +32,61 @@ main {
   grid-template-columns: repeat(12, 1fr);
 }
 
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 h1, h2, h3, blockquote {
-  font-family: elevon, sans-serif;
+  font-family: Georgia, sans-serif;
   font-weight: 700;
   font-style: normal;
+  letter-spacing: 0.125rem;
 }
 
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
+h1 {
+  letter-spacing: 0.25rem;
 }
 
+header {
+  background: var(--dark-bg);
+  grid-column: 2 / span 5;
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+}
 
+section {
+  grid-column: 2 / 8;
+  padding: 1.5rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+}
 
-  header {
-    background: var(--dark-bg);
-    grid-column: 2 / span 5;
-    font-size: 2.5rem;
-    padding: 2rem;
-    margin-bottom: var(--spacing);
-  }
+blockquote {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+}
 
-  section {
-    grid-column: 2 / 8;
-    padding: 1rem;
-    background: var(--dark-bg);
-    font-size: 1.25rem;
-    line-height: 1.5;
-    margin-bottom: var(--spacing);
-  }
+blockquote p {
+  color: black;
+  background-color: white;
+  font-size: 4rem;
+  display: inline;
 
-  blockquote {
-    margin: 0;
-    padding: 0;
-    grid-column: 2 / span 9;
-    margin-bottom: var(--spacing);
-  }
+  background-color: white;
+  padding: 2rem;
+  line-height: 2;
+}
 
-  blockquote p {
-    color: black;
-    background-color: white;
-    font-size: 4rem;
-    display: inline;
-    line-height: 1;
-  }
-
-  .left {
-    grid-column: 6 / 12;
-  }
+.left {
+  grid-column: 6 / 12;
+}
